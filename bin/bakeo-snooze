@@ -1,2 +1,2 @@
-#!/usr/bin/env ruby
-puts 'Bakeo, snooze'
+#!/bin/sh
+echo 'Bakeo, snooze'
