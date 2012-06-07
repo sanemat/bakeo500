@@ -8,3 +8,10 @@
 - heroku
 - heroku scheduler addon
 - twitter gem
+
+# This is for
+- 1hour contest
+
+# License
+- MIT License
+- sanemat
