@@ -1,2 +1,3 @@
 #!/bin/sh
+heroku addons:open scheduler
 echo 'Bakeo, snooze'
