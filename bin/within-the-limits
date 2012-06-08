@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require 'time'
-limit = Time.parse('2012-06-08T11:00:00+0900')
+limit = Time.parse('2012-06-11T11:00:00+0900')
 exit false if Time.now > limit
