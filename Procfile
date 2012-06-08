@@ -1,1 +1,1 @@
-worker: bin/bakeo-wake-up
+worker: sh bin/bakeo-wake-up
