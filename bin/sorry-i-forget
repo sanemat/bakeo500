@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # coding: utf-8
 require 'twitter'
-status = '木曜日ばけおに借りた弁当将軍代500円を着服してすいません @sanemat'
+status = "木曜日ばけおに借りた弁当将軍代500円を着服してすいません @sanemat #{exclude_dup}"
 Twitter.configure do |config|
   config.consumer_key = ENV['YOUR_CONSUMER_KEY']
   config.consumer_secret = ENV['YOUR_CONSUMER_SECRET']
@@ -9,3 +9,7 @@ Twitter.configure do |config|
   config.oauth_token_secret = ENV['YOUR_OAUTH_TOKEN_SECRET']
 end
 Twitter.update(status)
+
+def exclude_dup
+  [*'0'..'9', *'a'..'z', *'A'..'Z'].sample
+end
