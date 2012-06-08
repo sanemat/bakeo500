@@ -1,1 +1,1 @@
-worker: sh bin/bakeo-wake-up
+worker: ruby bin/within-the-limits || ruby sorry-i-forget
