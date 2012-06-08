@@ -3,5 +3,5 @@ cat <<-EOT
 Add below command into heroku scheduler:
 ruby bin/within-the-limits || ruby bin/sorry-i-forget
 EOT
-heroku addons:open scheduler
+heroku addons:add scheduler:standard
 echo 'Bakeo, wake up!'
